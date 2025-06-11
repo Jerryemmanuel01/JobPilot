@@ -16,7 +16,7 @@ const router = express.Router();
 // Create a new job
 /**
  * @swagger
- * /jobs:
+ * /user/jobs:
  *   post:
  *     summary: Create a new job
  *     tags: [Jobs]
@@ -63,7 +63,7 @@ router.post("/jobs", protect, createJob);
 // Get all jobs for a user
 /**
  * @swagger
- * /jobs:
+ * /user/jobs:
  *   get:
  *     summary: Get all jobs for the user
  *     tags: [Jobs]
@@ -78,7 +78,7 @@ router.get("/jobs", protect, getAllJobs);
 // Get a single job by ID
 /**
  * @swagger
- * /jobs/{id}:
+ * /user/jobs/{id}:
  *   get:
  *     summary: Get a single job by ID
  *     tags: [Jobs]
@@ -101,7 +101,7 @@ router.get("/jobs/:id", protect, getJob);
 // Update a job by ID
 /**
  * @swagger
- * /jobs/{id}:
+ * /user/jobs/{id}:
  *   patch:
  *     summary: Update a job
  *     tags:
@@ -153,7 +153,7 @@ router.patch("/jobs/:id", protect, updateJob);
 // Delete a job by ID
 /**
  * @swagger
- * /jobs/{id}:
+ * /user/jobs/{id}:
  *   delete:
  *     summary: Delete a job
  *     tags: [Jobs]

@@ -87,8 +87,10 @@ npm start
 - POST /api/auth/reset-password/:token - Reset password
 - POST /api/auth/change-password - Change password (protected)
 
-<!-- ### Profile
+### Jobs
 
-- GET /api/profile - Get user profile
-- PUT /api/profile - Update user profile
-- POST /api/profile/avatar - Upload profile avatar -->
+- POST /api/user/jobs - Create a new job
+- GET /api/user/jobs - Get all job
+- GET /api/user/job/{id} - Get a particular job
+- PATCH /api/user/job/{id} - Edit a particular job
+- DELETE /api/user/job/{id} - Delete a particular job
